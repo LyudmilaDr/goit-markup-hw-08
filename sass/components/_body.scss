@@ -1,31 +1,46 @@
-.page {
-    font-family: $main-font;
-    font-size: 16px;
-    color: $primmaty-text-color;
-}
-
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  // breakpoints:
+  //  mobile-480px
+  //  table-768px
+  //  desktop-1200px
 
+  // content 450px+30px padding
 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.page {
+  font-family: $main-font;
+  font-size: 16px;
+  color: $primmaty-text-color;
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-
+  }
 }
 .list {
-    text-decoration: none;
-    color: currentColor;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  text-decoration: none;
+  color: currentColor;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -33,6 +48,5 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+  margin: 0;
 }
-
