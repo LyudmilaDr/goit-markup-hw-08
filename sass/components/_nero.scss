@@ -1,10 +1,8 @@
 .nero {
     background: #F5F4FA;
-    &__lists{
-        display: block;
+   &__lists{
         @media screen and (min-width: 768px){
          display: flex; 
-         flex-direction: row; 
          flex-wrap:wrap ; 
         }
     }
@@ -57,9 +55,9 @@
     // &__item:not(:last-child) {
     //  margin-right: 30px;
      }
-    &__img {
-     display: block;
-     max-width: 100%;
-    }
+    // &__img {
+    //  display: block;
+    //  max-width: 100%;
+    // }
 }
  
