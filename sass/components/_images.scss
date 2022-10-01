@@ -1,8 +1,10 @@
 .images {
     padding-top: 0;
+    @media screen and(max-width:1200px) {
+      display: none;
+    }
 
-
-     &__headline {
+    &__headline {
      font-size: 36px;
      line-height: 1.16;
      text-align: center;
@@ -13,6 +15,9 @@
      &__img {
       display: block;
       max-width: 100%;
+    }
+    &__list{
+      display: flex;
     }
      &__item {
       position: relative;
