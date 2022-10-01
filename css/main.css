@@ -13,9 +13,9 @@
   color: #ffffff;
 }
 
-.header__logo {
+/* .header__logo {
   margin-right: 93px;
-}
+} */
 
 .nav {
   display: -webkit-box;
@@ -73,9 +73,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .header__list {
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -561,7 +562,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  max-width: 170px;
   height: 92px;
   margin: 0 auto;
   border: 1px solid #afb1b8;
