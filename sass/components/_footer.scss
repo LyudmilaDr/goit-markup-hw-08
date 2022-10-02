@@ -19,7 +19,6 @@
   }
 
   &__special {
-    width: 232px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,13 +26,14 @@
     margin-bottom: 60px;
     @media screen and (min-width: 767px) {
       margin-right: auto;
-      margin-left: 75px;
+      // margin-left: 75px;
+      width: 232px;
     }
   }
   &__box {
     margin-bottom: 59px;
     @media screen and (min-width: 768px) {
-      margin-right: 82px;
+      // margin-right: 82px;
       margin-left: auto;
     }
   }
@@ -102,7 +102,6 @@
     margin-bottom: 20px;
     text-align: center;
   }
-
 
   &__link-icons {
     display: flex;

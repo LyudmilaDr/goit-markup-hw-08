@@ -4,8 +4,9 @@
   justify-content: center;
   min-width: 200px;
   margin-bottom: 60px;
-  @media screen and (min-width: 767px) {
-    width: 450px;
+
+  @media screen and (min-width: 1200px){
+    flex-direction:row;  
   }
 
   &__title {
@@ -26,9 +27,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: #2f303a;
-    // padding-left: 16px;
     color: var(--title-text-color);
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px){
+      padding-left: 16px;
+
+    }
   }
 }
 &__icon {
@@ -51,9 +55,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-left: 12px;
   cursor: pointer;
   margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {
