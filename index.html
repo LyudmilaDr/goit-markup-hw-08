@@ -23,58 +23,63 @@
     <header class="header">
       <div class="header__section section">
         <div class="container header__nav">
-          <nav class="nav">
-            <a lang="en" class="logo header__logo" href="">
-              Web<span class="logo__special">Studio</span></a
-            >
-            <ul class="list">
-              <li class="nav__link">
-                <a class="nav__item--dec" href="./index.html">Студія</a>
+          <a lang="en" class="logo header__logo" href="">
+            Web<span class="logo__special">Studio</span></a
+          >
+          <div class="menu__box .js-menu-container">
+            <nav class="nav">
+              <ul class="list menu__list">
+                <li class="nav__link">
+                  <a class="nav__item--dec" href="./index.html">Студія</a>
+                </li>
+                <li class="nav__link">
+                  <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
+                </li>
+                <li class="nav__link">
+                  <a class="nav__item" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header__list list">
+              <li class="header__link">
+                <a class="header__all" href="mailto:info@devstudio.com">
+                  <svg class="header__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
               </li>
-              <li class="nav__link">
-                <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__item" href="">Контакти</a>
+              <li class="header__link">
+                <a class="header__all" href="tel:+380961111111">
+                  <svg class="header__icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="header__list list">
-            <li class="header__link">
-              <a class="header__all" href="mailto:info@devstudio.com">
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="header__link">
-              <a class="header__all" href="tel:+380961111111">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <button
-            class="menu__button .js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="перемикач стільникового меню"
+            <button
+              type="button"
+              class="menu__button .js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
-              <use class="menu__icon" href="./images/icons.svg#menu-open"></use>
-              <use
-                class="menu__close"
-                href="./images/icons.svg#menu-close"
-              ></use>
-            </svg>
-          </button>
+              <svg
+                width="40"
+                height="40"
+                aria-label="перемикач стільникового меню"
+              >
+                <use
+                  class="menu__icon"
+                  href="./images/icons.svg#menu-open"
+                ></use>
+                <use
+                  class="menu__close"
+                  href="./images/icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
