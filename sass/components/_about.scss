@@ -11,10 +11,10 @@
   }
 
   &__item {
-    max-width: 300px;
-    // @media screen and(min-width: 768px){
-    //   calc:( (100%-30px)/2)
-    // }  
+    max-width: 450px;
+    @media screen and(min-width: 768px) {
+     max-width:330px;
+    }
   }
   &__box {
     background-color: #f5f4fa;

@@ -1,5 +1,8 @@
 .nero {
   background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   &__lists {
     @media screen and (min-width: 768px) {
       display: flex;

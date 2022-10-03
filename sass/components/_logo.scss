@@ -1,20 +1,23 @@
 .logo {
-    font-family: $secondary-font;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: $accent-color;
-    text-align:center;
-    margin:0 auto;
+  font-family: $secondary-font;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+  text-align: center;
+  // margin:0 auto;
 
-   &__special {
-     color: $primmaty-text-color;
-    }
+  &__special {
+    color: $primmaty-text-color;
+  }
 
-    &__special--color {
-     color:$title-text-color;
-    }
+  &__special--color {
+    color: $title-text-color;
+  }
+}
+.footer__logo {
+  margin-bottom: 20px;
 }
 
 // .header__logo {

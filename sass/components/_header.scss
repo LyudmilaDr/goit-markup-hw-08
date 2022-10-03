@@ -9,11 +9,14 @@
   }
 
   &__nav {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 15px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ececec;
+    @media screen and (min-width: 767px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__list {
     flex-direction: row;

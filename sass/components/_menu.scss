@@ -1,0 +1,24 @@
+.menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.menu__button .menu__close {
+  display: none;
+}
+.menu__button .is-open .menu__close {
+  display: block;
+}
+.menu__button .is-open .menu__icon {
+  display: none;
+}
