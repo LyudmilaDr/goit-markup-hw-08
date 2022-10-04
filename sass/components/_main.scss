@@ -2,6 +2,10 @@
   color: $primmaty-text-color;
   text-decoration: none;
 
+  &__section {
+    margin-top: 60px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -69,4 +73,11 @@
     max-width: 100%;
     height: auto;
   }
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
 }
