@@ -1,6 +1,8 @@
 .buttons {
   margin-bottom: 50px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
 
   &__btn {
@@ -20,8 +22,8 @@
 
     &:focus,
     &:hover {
-      background-color: var(--accent-color);
-      color: var(--title-text-color);
+      background-color: $accent-color;
+      color: $title-text-color;
       border-radius: 4px;
       border: none;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
