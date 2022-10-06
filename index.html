@@ -26,42 +26,9 @@
           <a lang="en" class="logo header__logo" href="">
             Web<span class="logo__special">Studio</span></a
           >
-          <div class="menu__box .js-menu-container">
-            <nav class="nav">
-              <ul class="list menu__list">
-                <li class="nav__link">
-                  <a class="nav__item--dec" href="./index.html">Студія</a>
-                </li>
-                <li class="nav__link">
-                  <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
-                </li>
-                <li class="nav__link">
-                  <a class="nav__item" href="">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="header__list list">
-              <li class="header__link">
-                <a class="header__all" href="mailto:info@devstudio.com">
-                  <svg class="header__icon" width="16" height="12">
-                    <use href="./images/icons.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header__link">
-                <a class="header__all" href="tel:+380961111111">
-                  <svg class="header__icon" width="10" height="16">
-                    <use href="./images/icons.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
           <button
             type="button"
-            class="menu__button .js-open-menu"
+            class="menu__button js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -70,20 +37,50 @@
               height="40"
               aria-label="перемикач стільникового меню"
             >
-              <use class="menu__icon" href="./images/icons.svg#menu-open"></use>
-              <use
-                class="menu__close"
-                href="./images/icons.svg#menu-close"
-              ></use>
+              <use class="menu__open" href="./images/icons.svg#menu-open"></use>
+              <use class="menu__close" href="./images/icons.svg#menu-close"></use>
             </svg>
           </button>
+          <div class="menu__box js-menu-container" id="mobile-menu">
+          <nav class="nav">
+            <ul class="list menu__list">
+              <li class="nav__link">
+                <a class="nav__item--dec" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__link">
+                <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
+              </li>
+              <li class="nav__link">
+                <a class="nav__item" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__list list">
+            <li class="header__link">
+              <a class="header__all" href="mailto:info@devstudio.com">
+                <svg class="header__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__link">
+              <a class="header__all" href="tel:+380961111111">
+                <svg class="header__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
     </header>
 
     <!--Slogan section -->
-    <section class="section overline">
-      <div class="slogan container">
+    <section class="section">
+      <div class="slogan container overline">
         <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
         <button class="button" type="button" data-modal-open>
           Замовити послугу
@@ -259,7 +256,9 @@
           <li class="images__item">
             <img
               class="images__img"
-              src="images/img(11).jpg"
+              srcset="../images/img-11_@1x.jpg 1x,
+              ../images/img-11_@2x.jpg 2x" 
+              src="../images/img-11_@1x.jpg"
               alt="Веб-програміст за роботою"
               width="370"
               height="295"
@@ -271,7 +270,9 @@
           <li class="images__item">
             <img
               class="images__img"
-              src="images/img(12).jpg"
+              srcset="../images/img-12_@1x.jpg 1x,
+              ../images/img-12_@2x.jpg 2x" 
+              src="../images/img-12_@1x.jpg"
               alt="Розробник інтерфейсу за роботою"
               width="370"
               height="295"
@@ -283,7 +284,9 @@
           <li class="images__item">
             <img
               class="images__img"
-              src="images/img(13).jpg"
+              srcset="../images/img-13_@1x.jpg 1x,
+              ../images/img-13_@2x.jpg 2x" 
+              src="../images/img-13_@1x.jpg"
               alt="Веб-дизайнер за роботою"
               width="370"
               height="295"
@@ -632,6 +635,50 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile-menu -->
+    <!-- <div class="menu__box js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu__close js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40" aria-label="перемикач стільникового меню">
+          <use class="icon__close" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <nav class="nav">
+        <ul class="list menu__list">
+          <li class="nav__link">
+            <a class="nav__item--dec" href="./index.html">Студія</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__list list">
+        <li class="header__link">
+          <a class="header__all" href="mailto:info@devstudio.com">
+            <svg class="header__icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header__link">
+          <a class="header__all" href="tel:+380961111111">
+            <svg class="header__icon" width="10" height="16">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script
       defer

@@ -33,7 +33,7 @@
   }
 
   &__meta {
-    color: var(--text-color);
+    color:$text-color;
     font-weight: 400;
     margin-bottom: 10px;
   }
@@ -48,7 +48,7 @@
 
   &__item {
     font-weight: 400;
-    background-color: var(--title-text-color);
+    background-color:$title-text-color;
     text-align: center;
     margin-bottom: 30px;
     border-radius: 1px;
