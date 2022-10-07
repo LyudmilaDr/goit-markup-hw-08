@@ -6,7 +6,8 @@
   line-height: 1.19;
   color: $accent-color;
   text-align: center;
-  // margin:0 auto;
+  display: flex;
+  margin: 0;
 
   &__special {
     color: $primmaty-text-color;
@@ -20,6 +21,6 @@
   margin-bottom: 20px;
 }
 
-// .header__logo {
-//     margin-right: 93px;
-//    }
+.header__logo {
+  margin-right: 65px;
+}

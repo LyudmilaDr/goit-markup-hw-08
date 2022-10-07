@@ -1,7 +1,12 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
 
   &__item--dec {
     position: relative;
@@ -36,7 +41,7 @@
       display: none;
     }
   }
-  // &__link:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  &__link:not(:last-child) {
+    margin-right: 50px;
+  }
 }

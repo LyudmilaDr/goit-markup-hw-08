@@ -8,7 +8,7 @@
   &__nav {
     padding: 15px;
     display: flex;
-    justify-content: start;
+
     align-items: center;
     border-bottom: 1px solid #ececec;
     @media screen and (min-width: 767px) {
@@ -17,15 +17,15 @@
     }
   }
   &__list {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
-    align-items: center;
 
     @media screen and (max-width: 767px) {
       display: none;
     }
-    &:not(:last-child) {
-      margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
     }
   }
   &__all {
@@ -43,5 +43,8 @@
   &__icon {
     fill: currentColor;
     margin-right: 10px;
+  }
+  &__link:not(:last-child) {
+    margin-right: 50px;
   }
 }

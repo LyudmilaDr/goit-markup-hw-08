@@ -25,19 +25,8 @@
         <a lang="en" class="logo header__logo" href="">
           <span class="logo__special"> Web</span>Studio</a
         >
-        <button
-          type="button"
-          class="menu__button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="перемикач стільникового меню">
-            <use class="menu__open" href="./images/icons.svg#menu-open"></use>
-            <use class="menu__close" href="./images/icons.svg#menu-close"></use>
-          </svg>
-        </button>
         <nav class="nav">
-          <ul class="list">
+          <ul class="list nav__list">
             <li class="nav__link">
               <a class="nav__item" href="./index.html">Студія</a>
             </li>
@@ -67,6 +56,16 @@
             >
           </li>
         </ul>
+         <button
+          type="button"
+          class="menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="перемикач  меню">
+            <use class="menu__open" href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main section -->
@@ -551,7 +550,6 @@
     </main>
     <!--Footer section -->
     <footer class="footer">
-      <div class="section footer__section">
         <div class="container footer__container">
           <div class="footer__special">
             <a lang="en" class="logo" href=""
@@ -637,9 +635,62 @@
                 </svg>
               </button>
             </form>
-          </div>
         </div>
       </div>
     </footer>
+        <!-- Mobile-menu -->
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu__close js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40" aria-label="вимикач  меню">
+          <use class="icon__close" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <nav class="menu__nav">
+        <ul class="list menu__list">
+          <li class="link">
+            <a class="menu__all " href="./index.html">Студія</a>
+          </li>
+          <li class="link">
+            <a class="menu__all all" href="./portfolio.html"> Портфоліо</a>
+          </li>
+          <li class="link">
+            <a class="menu__all" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__box">
+      <ul class="list">
+        <li class="menu__link">
+          <a class="header__all" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="menu__link">
+          <a class="header__all" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__socials list">
+        <li class="menu__item"><a href="" class="menu__more">Instagram </a></li>
+        <li class="menu__item"><a href="" class="menu__more">Twitter</a></li>
+        <li class="menu__item"><a href="" class="menu__more">Facebook</a></li>
+        <li class="menu__item"><a href="" class="menu__more">LinkedIn</a></li>
+      </ul>
+</din>
+    </div>
+     </div>
+         <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
