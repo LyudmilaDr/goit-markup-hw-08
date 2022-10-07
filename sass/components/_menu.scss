@@ -11,6 +11,10 @@
   cursor: pointer;
   @media screen and (min-width: 768px) {
     display: none;
+
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
 .menu__container {
@@ -91,7 +95,7 @@
   @media screen and (min-width: 768px) {
     display: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    :focus {
+    &:focus {
       fill: $accent-color;
     }
   }
