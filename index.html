@@ -21,60 +21,51 @@
   <body class="page">
     <!-- Header section -->
     <header class="header">
-      <div class="header__section section">
-        <div class="container header__nav">
-          <a lang="en" class="logo header__logo" href="">
-            Web<span class="logo__special">Studio</span></a
-          >
-          <button
-            type="button"
-            class="menu__button js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="перемикач стільникового меню"
-            >
-              <use class="menu__open" href="./images/icons.svg#menu-open"></use>
-              <use class="menu__close" href="./images/icons.svg#menu-close"></use>
-            </svg>
-          </button>
-          <div class="menu__box js-menu-container" id="mobile-menu">
-          <nav class="nav">
-            <ul class="list menu__list">
-              <li class="nav__link">
-                <a class="nav__item--dec" href="./index.html">Студія</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__item" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header__list list">
-            <li class="header__link">
-              <a class="header__all" href="mailto:info@devstudio.com">
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+      <div class="container header__nav">
+        <a lang="en" class="logo header__logo" href="">
+          Web<span class="logo__special">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="list menu__list">
+            <li class="nav__link">
+              <a class="nav__item--dec" href="./index.html">Студія</a>
             </li>
-            <li class="header__link">
-              <a class="header__all" href="tel:+380961111111">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
+            <li class="nav__link">
+              <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
+            </li>
+            <li class="nav__link">
+              <a class="nav__item" href="">Контакти</a>
             </li>
           </ul>
-          </div>
-        </div>
+        </nav>
+        <ul class="header__list list">
+          <li class="menu__link">
+            <a class="header__all" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="menu__link">
+            <a class="header__all" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="перемикач  меню">
+            <use class="menu__open" href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -256,8 +247,7 @@
           <li class="images__item">
             <img
               class="images__img"
-              srcset="../images/img-11_@1x.jpg 1x,
-              ../images/img-11_@2x.jpg 2x" 
+              srcset="../images/img-11_@1x.jpg 1x, ../images/img-11_@2x.jpg 2x"
               src="../images/img-11_@1x.jpg"
               alt="Веб-програміст за роботою"
               width="370"
@@ -270,8 +260,7 @@
           <li class="images__item">
             <img
               class="images__img"
-              srcset="../images/img-12_@1x.jpg 1x,
-              ../images/img-12_@2x.jpg 2x" 
+              srcset="../images/img-12_@1x.jpg 1x, ../images/img-12_@2x.jpg 2x"
               src="../images/img-12_@1x.jpg"
               alt="Розробник інтерфейсу за роботою"
               width="370"
@@ -284,8 +273,7 @@
           <li class="images__item">
             <img
               class="images__img"
-              srcset="../images/img-13_@1x.jpg 1x,
-              ../images/img-13_@2x.jpg 2x" 
+              srcset="../images/img-13_@1x.jpg 1x, ../images/img-13_@2x.jpg 2x"
               src="../images/img-13_@1x.jpg"
               alt="Веб-дизайнер за роботою"
               width="370"
@@ -302,21 +290,30 @@
     <section class="nero__item section">
       <div class="container">
         <h2 class="nero__caption">Наша команда</h2>
-        <ul class="nero__lists list">
+        <ul class="nero__list list">
           <li class="nero__item">
             <!--Ігор Дем'яненко-->
             <picture>
               <!-- Desktop -->
-              <source media="(min-width:1200px)" srcset="images/img4-d_@1x.jpg 1x,images/img4-d_@2x.jpg 2x"/>
+              <source
+                media="(min-width:1200px)"
+                srcset="images/img4-d_@1x.jpg 1x, images/img4-d_@2x.jpg 2x"
+              />
               <!-- Tablet -->
-              <source media="(min-width:768px)" srcset="images/img4-t_@1x.jpg 1x,images/img4-t_@2x.jpg 2x"/>
+              <source
+                media="(min-width:768px)"
+                srcset="images/img4-t_@1x.jpg 1x, images/img4-t_@2x.jpg 2x"
+              />
               <!-- Mobile -->
-              <source media="(min-width:320px)" srcset="images/img4-m_@1x.jpg 1x,images/img4-m_@2x.jpg 2x"/>
+              <source
+                media="(min-width:320px)"
+                srcset="images/img4-m_@1x.jpg 1x, images/img4-m_@2x.jpg 2x"
+              />
               <img
-              class="nero__img"
-              src="images/img4-m_@1x.jpg"
-              alt="фото Ігора Дем'яненко "
-            />
+                class="nero__img"
+                src="images/img4-m_@1x.jpg"
+                alt="фото Ігора Дем'яненко "
+              />
             </picture>
             <div class="nero__container">
               <h3 class="nero__title">Ігор Дем'яненко</h3>
@@ -359,18 +356,27 @@
             <!--Ольга Рєпіна-->
             <picture>
               <!-- Desktop -->
-              <source media="(min-width:1200px)" srcset="images/img5-d_@1x.jpg 1x,images/img5-d_@2x.jpg 2x"/>
+              <source
+                media="(min-width:1200px)"
+                srcset="images/img5-d_@1x.jpg 1x, images/img5-d_@2x.jpg 2x"
+              />
               <!-- Tablet -->
-              <source media="(min-width:768px)" srcset="images/img5-t_@1x.jpg 1x,images/img5-t_@2x.jpg 2x"/>
+              <source
+                media="(min-width:768px)"
+                srcset="images/img5-t_@1x.jpg 1x, images/img5-t_@2x.jpg 2x"
+              />
               <!-- Mobile -->
-              <source media="(min-width:320px)" srcset="images/img5-m_@1x.jpg 1x,images/img5-m_@2x.jpg 2x"/>
+              <source
+                media="(min-width:320px)"
+                srcset="images/img5-m_@1x.jpg 1x, images/img5-m_@2x.jpg 2x"
+              />
               <img
-              class="nero__img"
-              src="images/img5-m_@1x.jpg"
-              alt="фото Ольги Рєпіної"
-            />
+                class="nero__img"
+                src="images/img5-m_@1x.jpg"
+                alt="фото Ольги Рєпіної"
+              />
             </picture>
-          <div class="nero__container">
+            <div class="nero__container">
               <h3 class="nero__title">Ольга Рєпіна</h3>
               <p class="nero__meta" lang="en">Frontend Developer</p>
               <div class="nero__box">
@@ -411,18 +417,27 @@
             <!--Миколи Тарасова-->
             <picture>
               <!-- Desktop -->
-              <source media="(min-width:1200px)" srcset="images/img6-d_@1x.jpg 1x,images/img6-d_@2x.jpg 2x"/>
+              <source
+                media="(min-width:1200px)"
+                srcset="images/img6-d_@1x.jpg 1x, images/img6-d_@2x.jpg 2x"
+              />
               <!-- Tablet -->
-              <source media="(min-width:768px)" srcset="images/img6-t_@1x.jpg 1x,images/img6-t_@2x.jpg 2x"/>
+              <source
+                media="(min-width:768px)"
+                srcset="images/img6-t_@1x.jpg 1x, images/img6-t_@2x.jpg 2x"
+              />
               <!-- Mobile -->
-              <source media="(min-width:320px)" srcset="images/img6-m_@1x.jpg 1x,images/img6-m_@2x.jpg 2x"/>
+              <source
+                media="(min-width:320px)"
+                srcset="images/img6-m_@1x.jpg 1x, images/img6-m_@2x.jpg 2x"
+              />
               <img
-              class="nero__img"
-              src="images/img6-m_@1x.jpg"
-              alt="фото Микола Тарасов "
-            />
+                class="nero__img"
+                src="images/img6-m_@1x.jpg"
+                alt="фото Микола Тарасов "
+              />
             </picture>
-          <div class="nero__container">
+            <div class="nero__container">
               <h3 class="nero__title">Микола Тарасов</h3>
               <p class="nero__meta" lang="en">Marketing</p>
               <div class="nero__box">
@@ -463,18 +478,27 @@
             <!--Михайла Єрмакова-->
             <picture>
               <!-- Desktop -->
-              <source media="(min-width:1200px)" srcset="images/img7-d_@1x.jpg 1x,images/img7-d_@2x.jpg 2x"/>
+              <source
+                media="(min-width:1200px)"
+                srcset="images/img7-d_@1x.jpg 1x, images/img7-d_@2x.jpg 2x"
+              />
               <!-- Tablet -->
-              <source media="(min-width:768px)" srcset="images/img7-t_@1x.jpg 1x,images/img7-t_@2x.jpg 2x"/>
+              <source
+                media="(min-width:768px)"
+                srcset="images/img7-t_@1x.jpg 1x, images/img7-t_@2x.jpg 2x"
+              />
               <!-- Mobile -->
-              <source media="(min-width:320px)" srcset="images/img7-m_@1x.jpg 1x,images/img7-m_@2x.jpg 2x"/>
+              <source
+                media="(min-width:320px)"
+                srcset="images/img7-m_@1x.jpg 1x, images/img7-m_@2x.jpg 2x"
+              />
               <img
-              class="nero__img"
-              src="images/img7-m_@1x.jpg"
-              alt="фото Михайло Єрмаков"
-            />
+                class="nero__img"
+                src="images/img7-m_@1x.jpg"
+                alt="фото Михайло Єрмаков"
+              />
             </picture>
-           
+
             <div class="nero__container">
               <h3 class="nero__title">Михайло Єрмаков</h3>
               <p class="nero__meta" lang="en">UI Designer</p>
@@ -661,49 +685,51 @@
       </div>
     </footer>
     <!-- Mobile-menu -->
-    <!-- <div class="menu__box js-menu-container" id="mobile-menu">
+    <div class="menu__container js-menu-container" id="mobile-menu">
       <button
         type="button"
         class="menu__close js-close-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg width="40" height="40" aria-label="перемикач стільникового меню">
+        <svg width="40" height="40" aria-label="вимикач  меню">
           <use class="icon__close" href="./images/icons.svg#menu-close"></use>
         </svg>
       </button>
-      <nav class="nav">
+      <nav class="menu__nav">
         <ul class="list menu__list">
-          <li class="nav__link">
-            <a class="nav__item--dec" href="./index.html">Студія</a>
+          <li class="link">
+            <a class="menu__all all" href="./index.html">Студія</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__item" href="./portfolio.html"> Портфоліо</a>
+          <li class="link">
+            <a class="menu__all" href="./portfolio.html"> Портфоліо</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__item" href="">Контакти</a>
+          <li class="link">
+            <a class="menu__all" href="">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="header__list list">
-        <li class="header__link">
+      <div class="menu__box">
+      <ul class="list">
+        <li class="menu__link">
           <a class="header__all" href="mailto:info@devstudio.com">
-            <svg class="header__icon" width="16" height="12">
-              <use href="./images/icons.svg#envelope"></use>
-            </svg>
             info@devstudio.com</a
           >
         </li>
-        <li class="header__link">
+        <li class="menu__link">
           <a class="header__all" href="tel:+380961111111">
-            <svg class="header__icon" width="10" height="16">
-              <use href="./images/icons.svg#smartphone"></use>
-            </svg>
             +38 096 111 11 11</a
           >
         </li>
       </ul>
-    </div> -->
+      <ul class="menu__socials list">
+        <li class="menu__item"><a href="" class="menu__more">Instagram </a></li>
+        <li class="menu__item"><a href="" class="menu__more">Twitter</a></li>
+        <li class="menu__item"><a href="" class="menu__more">Facebook</a></li>
+        <li class="menu__item"><a href="" class="menu__more">LinkedIn</a></li>
+      </ul>
+       </din>
+    </div>
     <script src="./js/modal.js"></script>
     <script
       defer

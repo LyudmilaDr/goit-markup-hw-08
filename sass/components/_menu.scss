@@ -1,21 +1,3 @@
-.menu__box {
-  background-color: $additional-bg-cl;
-  padding: 40px 48px;
-  font-size: 40px;
-  @media screen and(max-width:767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    // transform: translateY(100%);
-    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  // &.is-open {
-  //   transform: translateX(100%);
-  // }
-}
 .menu__button {
   display: flex;
   justify-content: center;
@@ -31,13 +13,86 @@
     display: none;
   }
 }
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  padding: 40px 48px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: $additional-bg-cl;
 
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
 .menu__close {
-  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-.menu__buton .is-open .menu__close {
-  display: block;
+
+.menu__box {
+  margin-top: auto;
 }
-.menu__button .is-open .menu__open {
-  display: none;
+.menu__socials {
+  display: flex;
+  justify-content: center;
+}
+.menu__more {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  text-decoration: none;
+}
+.menu__item {
+  padding: 5px;
+}
+.menu__all {
+  text-decoration: none;
+  font-family: $main-font;
+  font-size: 40px;
+  line-height: 1.22;
+  text-align: start;
+  letter-spacing: 2%;
+  color: $primmaty-text-color;
+}
+.all {
+  color: $accent-color;
+}
+.menu__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    :focus {
+      fill: $accent-color;
+    }
+  }
 }

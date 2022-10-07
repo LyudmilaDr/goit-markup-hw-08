@@ -21,43 +21,52 @@
   <body class="page">
     <!-- Header section -->
     <header class="header">
-      <div class="section header__section">
-        <div class="container header__nav">
-          <nav class="nav">
-            <a lang="en" class="logo header__logo" href="">
-              <span class="logo__special"> Web</span>Studio</a
-            >
-            <ul class="list">
-              <li class="nav__link">
-                <a class="nav__item" href="./index.html">Студія</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__item--dec" href="./portfolio.html"> Портфоліо</a>
-              </li>
-              <li class="nav__link">
-                <a class="nav__item" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="list header__list">
-            <li class="header__link">
-              <a class="header__all" href="mailto:info@devstudio.com">
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+      <div class="container header__nav">
+        <a lang="en" class="logo header__logo" href="">
+          <span class="logo__special"> Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="перемикач стільникового меню">
+            <use class="menu__open" href="./images/icons.svg#menu-open"></use>
+            <use class="menu__close" href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="list">
+            <li class="nav__link">
+              <a class="nav__item" href="./index.html">Студія</a>
             </li>
-            <li class="header__link">
-              <a class="header__all" href="tel:+380961111111">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
+            <li class="nav__link">
+              <a class="nav__item--dec" href="./portfolio.html"> Портфоліо</a>
+            </li>
+            <li class="nav__link">
+              <a class="nav__item" href="">Контакти</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="list header__list">
+          <li class="header__link">
+            <a class="header__all" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header__link">
+            <a class="header__all" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Main section -->
@@ -65,29 +74,58 @@
       <section class="main__section section">
         <div class="container">
           <div class="main__box">
-          <h1 class="visually-hidden">Список наших робіт</h1>
-          <ul class="buttons list">
-            <li><button class="buttons__btn" type="button">Усі</button></li>
-            <li>
-              <button class="buttons__btn" type="button">Веб-сайти</button>
-            </li>
-            <li><button class="buttons__btn" type="button">Додатки</button></li>
-            <li><button class="buttons__btn" type="button">Дизайн</button></li>
-            <li>
-              <button class="buttons__btn" type="button">Маркетинг</button>
-            </li>
-          </ul></div>
+            <h1 class="visually-hidden">Список наших робіт</h1>
+            <ul class="buttons list">
+              <li><button class="buttons__btn" type="button">Усі</button></li>
+              <li>
+                <button class="buttons__btn" type="button">Веб-сайти</button>
+              </li>
+              <li>
+                <button class="buttons__btn" type="button">Додатки</button>
+              </li>
+              <li>
+                <button class="buttons__btn" type="button">Дизайн</button>
+              </li>
+              <li>
+                <button class="buttons__btn" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
           <ul class="list main__list">
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(21).jpg"
-                    alt="На фото дизайн веб-сайту"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img21-d_@1x.jpg 1x,
+                        images/img21-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img21-t_@1x.jpg 1x,
+                        images/img21-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img21-m_@1x.jpg 1x,
+                        images/img21-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img21-m_@1x.jpg"
+                      alt="На фото дизайн веб-сайту"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -106,13 +144,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(22).jpg"
-                    alt="На фото  дизайн постеру з баскетбольного матчу"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img22-d_@1x.jpg 1x,
+                        images/img22-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img22-t_@1x.jpg 1x,
+                        images/img22-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img22-m_@1x.jpg 1x,
+                        images/img22-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img22-m_@1x.jpg"
+                      alt="На фото  дизайн постеру з баскетбольного матчу"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -133,13 +195,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(23).jpg"
-                    alt="На фото дизайн реклами ресторану"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img23-d_@1x.jpg 1x,
+                        images/img23-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img23-t_@1x.jpg 1x,
+                        images/img23-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img23-m_@1x.jpg 1x,
+                        images/img23-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img23-m_@1x.jpg"
+                      alt="На фото дизайн реклами ресторану"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -160,13 +246,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(24).jpg"
-                    alt="На фото дизайн проекту"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img24-d_@1x.jpg 1x,
+                        images/img24-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img24-t_@1x.jpg 1x,
+                        images/img24-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img24-m_@1x.jpg 1x,
+                        images/img24-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img24-m_@1x.jpg"
+                      alt="На фото дизайн проекту"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -187,13 +297,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(25).jpg"
-                    alt="На фото дизайн проекту"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img25-d_@1x.jpg 1x,
+                        images/img25-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img25-t_@1x.jpg 1x,
+                        images/img25-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img25-m_@1x.jpg 1x,
+                        images/img25-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img25-m_@1x.jpg"
+                      alt="На фото дизайн проекту"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -214,13 +348,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(26).jpg"
-                    alt="На фото Веб-сайт"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img26-d_@1x.jpg 1x,
+                        images/img26-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img26-t_@1x.jpg 1x,
+                        images/img26-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img26-m_@1x.jpg 1x,
+                        images/img26-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img26-m_@1x.jpg"
+                      alt="На фото Веб-сайт"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -241,13 +399,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(27).jpg"
-                    alt="На фото дизайн журналу"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img22-d_@1x.jpg 1x,
+                        images/img22-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img27-t_@1x.jpg 1x,
+                        images/img27-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img27-m_@1x.jpg 1x,
+                        images/img27-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img27-m_@1x.jpg"
+                      alt="На фото дизайн журналу"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -268,13 +450,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(28).jpg"
-                    alt="На фото дизайн проекту"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img28-d_@1x.jpg 1x,
+                        images/img28-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img28-t_@1x.jpg 1x,
+                        images/img28-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img28-m_@1x.jpg 1x,
+                        images/img28-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img28-m_@1x.jpg"
+                      alt="На фото дизайн проекту"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -293,13 +499,37 @@
             <li class="main__item">
               <a class="main__all" href="">
                 <div class="main__thumb">
-                  <img
-                    class="main__img"
-                    src="./images/img(29).jpg"
-                    alt="На фото дизайн додатку"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        images/img22-d_@1x.jpg 1x,
+                        images/img22-d_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        images/img29-t_@1x.jpg 1x,
+                        images/img29-t_@2x.jpg 2x
+                      "
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/img29-m_@1x.jpg 1x,
+                        images/img29-m_@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="main__img"
+                      src="images/img29-m_@1x.jpg"
+                      alt="На фото дизайн додатку"
+                    />
+                  </picture>
                   <div class="main__overlay">
                     <p class="main__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
