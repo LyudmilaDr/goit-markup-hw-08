@@ -1,17 +1,13 @@
-
 .slogan {
   padding-top:118px;
   padding-bottom:118px;
   background-color: $accent-bg-cl;
   text-transform: uppercase;
   text-align: center;
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  @media screen and (min-width: 1200px){
+    padding-top:200px;
+    padding-bottom:200px;
   }
-}
-.slogan__section {
-  padding-top:0;
 }
 .overline {
   display: block;
@@ -111,23 +107,21 @@
   }
 }
 .cnt {
+  font-family:$main-font;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.61;
   color: $title-text-color;
   display: block;
   width: 360px;
-   margin: 0 auto;
-  text-align:center;
-  @media screen and (min-width: 768px) {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-     width: 696px;
-  }
+  margin: 0 auto;
+letter-spacing: 6%;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
+    height:120px;
   }
 }
 
