@@ -69,6 +69,17 @@
 }
 .menu__item {
   padding: 5px;
+  height: 5px;
+
+  &:not(:last-child)::after{
+    content: "";
+    width: 5px;
+    margin-left:5px;
+    margin-right: 5px;
+    border-radius:none ;
+    border: 1px solid $text-color;
+    transform: rotate(90deg);
+  }
 }
 .menu__all {
   text-decoration: none;
@@ -100,3 +111,27 @@
     }
   }
 }
+.menu__tel{
+ font-family:$main-font ;
+  font-size: 34px;
+  line-height:1.17;
+ letter-spacing: 2%;
+ text-align: start;
+color:$accent-color ;
+}
+.menu__email{
+  font-family:$main-font ;
+  font-size: 24px;
+  line-height:1.16;
+  letter-spacing: 2%;
+ color: $text-color;
+
+}
+.menu__link:not(:last-child) {
+  margin-bottom:32px;
+}
+.menu__link:last-child {
+  margin-bottom:64px;
+}
+
+

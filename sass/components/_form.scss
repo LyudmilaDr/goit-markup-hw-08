@@ -108,13 +108,15 @@
     line-height: 1.71;
     color:$text-color;
     text-transform: none;
-
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
 .form__label-checkbox {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: flex-start;
     gap: 9px;
 }
 
@@ -145,6 +147,7 @@
 
 .form__link {
     color: $accent-color;
+  text-align: center;
 }
 
 .form__button {
