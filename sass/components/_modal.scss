@@ -117,15 +117,15 @@
   color: $title-text-color;
   display: block;
   width: 360px;
-  // width: 696px;
    margin: 0 auto;
   text-align:center;
   @media screen and (min-width: 768px) {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+     width: 696px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
