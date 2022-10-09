@@ -1240,7 +1240,7 @@
         justify-content: space-around;
   }
 }
-.footer__special {
+.footer__container__special {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,40 +1257,40 @@
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .footer__special {
+  .footer__container__special {
     margin-right: 60px;
     margin-left: 60px;
   }
 }
-.footer__box {
+.footer__container__box {
   margin-bottom: 59px;
 }
 @media screen and (min-width: 768px) {
-  .footer__box {
+  .footer__container__box {
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__box {
+  .footer__container__box {
     margin-left: 0;
     margin-right: 60px;
   }
 }
-.footer__container-form {
+.footer__container__container-form {
   width: calc(100% - 30px);
 }
 @media screen and (min-width: 767px) {
-  .footer__container-form {
+  .footer__container__container-form {
     margin-top: auto;
     width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container-form {
+  .footer__container__container-form {
     margin-top: 0;
   }
 }
-.footer__list {
+.footer__container__list {
   text-decoration: none;
   color: currentColor;
   list-style: none;
@@ -1308,26 +1308,26 @@
           justify-content: center;
 }
 @media screen and (min-width: 1200px) {
-  .footer__list {
+  .footer__container__list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
   }
 }
-.footer__list:not(:last-child) {
+.footer__container__list:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer__type {
+.footer__container__type {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__type:hover, .footer__type:focus {
+.footer__container__type:hover, .footer__container__type:focus {
   color: #188ce8;
 }
-.footer__all {
+.footer__container__all {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -1336,10 +1336,10 @@
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__all:hover, .footer__all:focus {
+.footer__container__all:hover, .footer__container__all:focus {
   color: #188ce8;
 }
-.footer__title {
+.footer__container__title {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -1350,7 +1350,7 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.footer__link-icons {
+.footer__container__link-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1370,23 +1370,23 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__link-icons:hover {
+.footer__container__link-icons:hover {
   fill: #ffffff;
   background-color: #2196f3;
   border-radius: 50%;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.footer__item-icons:not(:last-child) {
+.footer__container__item-icons:not(:last-child) {
   margin-right: 10px;
 }
-.footer__item:not(:last-child) {
+.footer__container__item:not(:last-child) {
   margin-right: 30px;
 }
-.footer__container-form {
+.footer__container__container-form {
   margin-top: auto;
 }
-.footer__social {
+.footer__container__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,7 +1399,7 @@
           justify-content: center;
   gap: 10px;
 }
-.footer__link {
+.footer__container__link {
   margin: 0 auto;
 }
 
