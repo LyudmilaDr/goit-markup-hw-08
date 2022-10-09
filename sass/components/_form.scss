@@ -1,172 +1,174 @@
 .form__label {
-    display: flex;
-    justify-content: start;
-    text-align: center;
-    margin-bottom: 4px;
-
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  margin-bottom: 4px;
 }
 
 .form__title {
-    font-family:$main-font;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color:$primmaty-text-color;
-    display: block;
-    margin-bottom: 12px;
-    text-transform: none;
-    letter-spacing: 0.03em;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $primmaty-text-color;
+  display: block;
+  margin-bottom: 12px;
+  text-transform: none;
+  letter-spacing: 0.03em;
 }
 
 .form__conteiner {
-    position: relative;
-    margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .icon {
-    padding: 3px;
+  padding: 3px;
 }
 
 .form__user {
-    font-family:$main-font;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    color: $text-color;
-    text-transform: capitalize;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: $text-color;
+  text-transform: capitalize;
 }
 
 .form__user-input {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 40px;
-    outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 40px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-     &:hover,
-     &:focus {
-      border: 1px solid $accent-color;
-
-     }
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
 
 .icon-user {
-    position: absolute;
-    top: 10%;
-    left: 15px;
-    transform: translateY(150%);
-    fill: $primmaty-text-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 15px;
+  transform: translateY(120%);
+  fill: $primmaty-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-     .form__user-input:hover+ &,
-     .form__user-input:focus+ &{
-       fill: #2196F3;
-       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  .form__user-input:hover + &,
+  .form__user-input:focus + & {
+    fill: #2196f3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .form__user-coment {
-    width: 100%;
-    padding: 12px 16px;
-    outline: none;
-    resize: none;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 100%;
+  padding: 12px 16px;
+  outline: none;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 
-     &::placeholder {
-      font-family:$main-font;
-      font-size: 12px;
-      line-height: 1.16;
-      cursor: pointer;
-      color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 1.16;
+    cursor: pointer;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-     }
-
-     &:hover,
-     &:focus {
-        border: 1px solid $accent-color ;
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .form__label-coment {
-    display: flex;
-    justify-content: start;
-    text-align: center;
-    gap: 8px;
-
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  gap: 8px;
 }
 
 .form__user-span {
-    font-family: $main-font;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color:$text-color;
-    text-transform: none;
-    text-align: center;
-    flex-wrap: nowrap;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $text-color;
+  text-transform: none;
+  text-align: center;
+  flex-wrap: nowrap;
 }
 
 .form__label-checkbox {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 9px;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
 }
-
+.icon-user-vector {
+  position: absolute;
+  top: -60%;
+  left: -6%;
+  transform: translateY(120%);
+}
 .icon-unchecked {
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .form__input-checkbox:checked+.icon-user-vector & {
-      opacity: 0;
-    }
+  .form__input-checkbox:checked + .icon-user-vector & {
+    opacity: 0;
+  }
 }
 .icon-checked {
-    opacity: 0;
-    border: 1px solid #2196F3;
-    border-radius: 2px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  border: 1px solid #2196f3;
+  border-radius: 2px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .form__input-checkbox:checked+.icon-user-vector & {
-      opacity: 1;
-    }
+  .form__input-checkbox:checked + .icon-user-vector & {
+    opacity: 1;
+  }
 }
 
-.form__input-checkbox:focus+.icon-user-vector {
-    outline: 2px solid $accent-color;
-    outline-offset: 1px;
-    border-radius: 2px;
+.form__input-checkbox:focus + .icon-user-vector {
+  outline: 2px solid $accent-color;
+  outline-offset: 1px;
+  border-radius: 2px;
 }
 
 .form__link {
-    color: $accent-color;
+  color: $accent-color;
   text-align: center;
 }
 
 .form__button {
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    padding: 10px 52px;
-    margin-top: 30px;
-    color: $title-text-color;
-    background-color: #2196F3;
-    border: 1px solid #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 52px;
+  margin-top: 30px;
+  color: $title-text-color;
+  background-color: #2196f3;
+  border: 1px solid #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-     &:hover,
-     &:focus {
-    background-color: #188CE8;
-    }
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

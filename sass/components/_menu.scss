@@ -53,10 +53,7 @@
 .menu__box {
   margin-top: auto;
 }
-.menu__socials {
-  display: flex;
-  justify-content: center;
-}
+
 .menu__more {
   font-family: $main-font;
   font-style: normal;
@@ -67,31 +64,23 @@
   color: $accent-color;
   text-decoration: none;
 }
-.menu__item {
-  padding: 5px;
-  height: 5px;
 
-  // &:not(:last-child)::after{
-  //   content: "";
-  //   width: 5px;
-  //   margin-left:5px;
-  //   margin-right: 5px;
-  //   border-radius:none ;
-  //   border: 1px solid $text-color;
-  //   transform: rotate(90deg);
-  // }
-}
 .menu__all {
   text-decoration: none;
   font-family: $main-font;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.22;
   text-align: start;
   letter-spacing: 2%;
   color: $primmaty-text-color;
+  margin-bottom: 32px;
 }
 .all {
   color: $accent-color;
+}
+.menu__all--dec {
+  margin-bottom: 32px;
 }
 .menu__close {
   display: flex;
@@ -111,27 +100,51 @@
     }
   }
 }
-.menu__tel{
- font-family:$main-font ;
+.menu__tel {
+  font-family: $main-font;
+  font-weight: 500;
   font-size: 34px;
-  line-height:1.17;
- letter-spacing: 2%;
- text-align: start;
-color:$accent-color ;
-}
-.menu__email{
-  font-family:$main-font ;
-  font-size: 24px;
-  line-height:1.16;
+  line-height: 1.17;
   letter-spacing: 2%;
- color: $text-color;
-
+  text-align: start;
+  color: $accent-color;
+  text-decoration: none;
+}
+.menu__email {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 2%;
+  color: $text-color;
+  text-decoration: none;
 }
 .menu__link:not(:last-child) {
-  margin-bottom:32px;
+  margin-bottom: 32px;
 }
 .menu__link:last-child {
-  margin-bottom:64px;
+  margin-bottom: 64px;
 }
+.menu__socials {
+  display: flex;
+  justify-content: start;
+}
+.menu__item {
+  padding: 10px;
+  height: 5px;
+  position: relative;
 
+  &:not(:last-child)::after {
+    display: block;
+    position: absolute;
+    top: 200%;
+    left: 80%;
+    content: "";
+    width: 22px;
+    height: 1px;
+    margin-left: 5px;
+    background-color: rgba(33, 33, 33, 0.2);
 
+    transform: rotate(90deg);
+  }
+}

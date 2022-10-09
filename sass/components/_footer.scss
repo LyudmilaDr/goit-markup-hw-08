@@ -46,9 +46,10 @@
   }
 
   &__container-form {
+    width: calc(100% - 30px);
     @media screen and (min-width: 767px) {
       margin-top: auto;
-      width:450px ;
+      width:450px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 0;
