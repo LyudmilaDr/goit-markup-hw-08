@@ -62,7 +62,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
-  text-decoration: none;
+  display: block;
+  padding-right: 5px;
+  border-right:1px solid 
+  rgba(33, 33, 33, 0.2);
+ 
 }
 
 .menu__all {
@@ -74,13 +78,11 @@
   text-align: start;
   letter-spacing: 2%;
   color: $primmaty-text-color;
-  margin-bottom: 32px;
+  display: block;
+  margin-bottom:32px;
 }
 .all {
   color: $accent-color;
-}
-.menu__all--dec {
-  margin-bottom: 32px;
 }
 .menu__close {
   display: flex;
@@ -127,24 +129,6 @@
 }
 .menu__socials {
   display: flex;
-  justify-content: start;
-}
-.menu__item {
-  padding: 10px;
-  height: 5px;
-  position: relative;
+ gap:10px;
 
-  &:not(:last-child)::after {
-    display: block;
-    position: absolute;
-    top: 200%;
-    left: 80%;
-    content: "";
-    width: 22px;
-    height: 1px;
-    margin-left: 5px;
-    background-color: rgba(33, 33, 33, 0.2);
-
-    transform: rotate(90deg);
-  }
 }

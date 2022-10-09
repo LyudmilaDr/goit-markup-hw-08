@@ -100,28 +100,28 @@
 .form__user-span {
   font-family: $main-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: $text-color;
   text-transform: none;
   text-align: center;
   flex-wrap: nowrap;
 }
+.form__box-checkbox {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 
 .form__label-checkbox {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:center;
   gap: 9px;
+  padding-left:25px;
 }
-.icon-user-vector {
-  position: absolute;
-  top: -60%;
-  left: -6%;
-  transform: translateY(120%);
-}
+
 .icon-unchecked {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -7,10 +7,6 @@
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
-  &__container {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
 
   &__caption {
     font-family: $main-font;
@@ -21,13 +17,13 @@
     text-align: center;
     margin-bottom: 50px;
   }
-
+ 
   //   &__item:not(:last-child) {
   //     margin-right: 30px;
-  //   }
+  //  
   &__item {
     @media screen and (max-width: 767px) {
-      width: calc((100% - 60px) / 2);
+      width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: 768px) {
@@ -51,4 +47,4 @@
       border: 1px solid $accent-color;
     }
   }
-}
+ }
