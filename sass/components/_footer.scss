@@ -6,16 +6,15 @@
   font-weight: 400;
   background-color: $accent-bg-cl;
 
-  &__formalized{
+  &__formalized {
     display: flex;
-    flex-direction:column ;
-   
+    flex-direction: column;
 
-    @media screen and (min-width: 767px){
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-   }
+    @media screen and (min-width: 767px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
   &__container {
@@ -24,13 +23,15 @@
     justify-content: center;
     align-items: center;
     @media screen and (min-width: 767px) {
-      justify-content: space-around; }
-      @media screen and (min-width: 1200px) {
-        flex-direction:row;
-       align-items: baseline;  
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
-// СПЕЦ 
+  // СПЕЦ
   &__special {
     display: flex;
     flex-direction: column;
@@ -38,12 +39,14 @@
     align-items: center;
     margin-bottom: 60px;
     margin-left: 80px;
-    margin-right:80px;
+    margin-right: 80px;
 
-    
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 60px;
-      margin-left: 60px;
+      margin-left: 0;
+      padding-left: 0;
+      display: flex;
+      justify-content: start;
     }
   }
   &__list {
@@ -58,66 +61,64 @@
     @media screen and (min-width: 1200px) {
       justify-content: start;
     }
-
-}
-&__type {
-  color: $title-text-color;
-  text-decoration: none;
-  font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: #188ce8;
   }
-}
-&__all {
-  font-style: normal;
-  font-weight: 500;
-  font-family: $main-font;
-  color: $text-color;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__type {
+    color: $title-text-color;
+    text-decoration: none;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: #188ce8;
+    &:hover,
+    &:focus {
+      color: #188ce8;
+    }
   }
-}
-&:not(:last-child) {
-  margin-bottom: 9px;
-}
+  &__all {
+    font-style: normal;
+    font-weight: 500;
+    font-family: $main-font;
+    color: $text-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-// БОКС
-&__box {
-  margin-bottom: 59px;
-  @media screen and (min-width: 768px) {
-    margin-left: 80px;
-    margin-right:80px;
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
-    margin-right: 60px;
+    &:hover,
+    &:focus {
+      color: #188ce8;
+    }
   }
-}
- }
-&__title {
-  text-transform: uppercase;
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-  margin-bottom: 20px;
-  text-align: center;
-}
-&__social{  
-display: flex;
-flex-direction:row;
-justify-content: center;
-align-items: center;
-}
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  // БОКС
+  &__box {
+    margin-bottom: 59px;
+    @media screen and (min-width: 768px) {
+      margin-left: 80px;
+      margin-right: 80px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 60px;
+      }
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__link-icons {
     display: flex;
@@ -146,20 +147,23 @@ align-items: center;
     margin-right: 30px;
   }
 
-  
   &__link {
     margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
   }
 
-// ФОРМА
-&__container-form {
-  width: calc(100% - 30px);
-  @media screen and (min-width: 767px) {
-    margin-top: auto;
-    width:450px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
+  // ФОРМА
+  &__container-form {
+    width: calc(100% - 30px);
+    @media screen and (min-width: 767px) {
+      margin-top: auto;
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      width: auto;
+    }
   }
 }
- }
