@@ -156,7 +156,7 @@
 }
 @media screen and (min-width: 1200px) {
   .nav__item--dec::after {
-    top: 50px;
+    top: 53px;
   }
 }
 .nav__item {
@@ -1287,7 +1287,7 @@
 }
 @media screen and (min-width: 1200px) {
   .footer__special {
-    margin-right: 60px;
+    margin-right: 69px;
     margin-left: 0;
     padding-left: 0;
     display: -webkit-box;
