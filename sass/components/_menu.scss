@@ -22,8 +22,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
   padding: 40px 48px;
   font-size: 40px;
   display: flex;
@@ -62,13 +62,13 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
-  text-decoration: none;
   display: block;
   padding-right: 5px;
   border-right:1px solid 
   rgba(33, 33, 33, 0.2);
- 
-}
+  text-decoration: none;
+ }
+
 
 .menu__all {
   text-decoration: none;
@@ -106,7 +106,7 @@
 .menu__tel {
   font-family: $main-font;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.17;
   letter-spacing: 2%;
   text-align: start;

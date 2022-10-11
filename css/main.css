@@ -112,11 +112,10 @@
 @media screen and (min-width: 1200px) {
   .footer__logo {
     margin-left: 0;
-    margin-right: 5px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    text-align: start;
+    text-align: center;
   }
 }
 
@@ -266,10 +265,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  text-decoration: none;
   display: block;
   padding-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  text-decoration: none;
 }
 
 .menu__all {
@@ -320,7 +319,7 @@
 .menu__tel {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.17;
   letter-spacing: 2%;
   text-align: start;
@@ -782,6 +781,14 @@
     width: calc((100% - 60px) / 2);
   }
 }
+.about__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .about__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .about__box {
   background-color: #f5f4fa;
   height: 120px;
@@ -795,11 +802,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 34px;
-}
-@media (min-width: 1200px) {
-  .about .about__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .about__subtitle {
   display: -webkit-box;
@@ -1222,6 +1224,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 767px) {
   .footer__formalized {
@@ -1232,8 +1237,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 .footer__container {
@@ -1255,6 +1261,9 @@
   .footer__container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1297,9 +1306,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .footer__list {
